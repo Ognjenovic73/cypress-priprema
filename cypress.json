@@ -1,1 +1,7 @@
-{}
+{
+    "baseUrl": "https://cypress.vivifyscrum-stage.com",
+    "env": {
+        "EXTERNAL_EMAIL": "dragan.basket@yahoo.com",
+        "EXTERNAL_PASSWORD": "Sith_Lord99"
+    }
+}
