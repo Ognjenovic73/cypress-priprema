@@ -17,10 +17,6 @@ class LoginPage {
         return cy.get('h1');
     }
 
-    get errorMsg() {
-        return cy.get('span[class="el-form-item__error"]');
-    }
-
     login (email,password){
         this.emailInput.type(email)
         this.passwordInput.type(password)

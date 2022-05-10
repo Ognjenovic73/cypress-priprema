@@ -34,8 +34,9 @@ Cypress.Commands.add('loginViaBackend',() => {
             password: Cypress.env('EXTERNAL_PASSWORD')
     }
     }).its('body').then(response => {
+        console.log(response.user);
          window.localStorage.setItem('token', response.token);
-         window.localStorage.setItem('user', response.user);
-         window.localStorage.setItem('userId', response.user.id)
+         window.localStorage.setItem('user',JSON.stringify(response.user));
+         window.localStorage.setItem('user_id', response.user.id)
     })
 })
